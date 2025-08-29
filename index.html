@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="icon" href="favicon.ico">
-<meta name="description" content="Karolina Baćmaga — AI ethics, Python, Web projects.">
-<meta property="og:title" content="Karolina Baćmaga — Portfolio">
-<meta property="og:description" content="Selected projects in AI ethics, Python and web.">
-<meta property="og:image" content="og-image.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Karolina Baćmaga — Portfolio</title>
+
+  <!-- SEO + Social -->
+  <link rel="icon" href="favicon.ico">
+  <meta name="description" content="Karolina Baćmaga — AI ethics, Python, Web projects.">
+  <meta property="og:title" content="Karolina Baćmaga — Portfolio">
+  <meta property="og:description" content="Selected projects in AI ethics, Python and web.">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -22,13 +24,14 @@
 <header class="site-header">
   <div class="topbar">
     <h1>Karolina Baćmaga</h1>
-    <button id="themeToggle" class="btn small">🌙</button>
+    <button id="themeToggle" class="btn small" aria-label="Toggle dark mode">🌙</button>
   </div>
   <p class="tagline">AI ethics &middot; Python &middot; Web</p>
   <nav class="nav">
     <a href="#projects">Projects</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="https://github.com/karoo2245/" target="_blank" rel="noopener">GitHub</a>
   </nav>
 </header>
 
@@ -39,42 +42,42 @@
   btn.onclick = () => document.body.classList.toggle('dark');
 </script>
 
-  <main class="container">
-    <section id="projects">
-      <h2>Projects</h2>
+<main class="container">
+  <section id="projects">
+    <h2>Projects</h2>
 
-      <article class="card">
-        <h3>Weather App</h3>
-        <p>Simple Python app that fetches current weather by city using a public API.</p>
-        <a class="btn" href="#" target="_blank" rel="noopener">GitHub →</a>
-      </article>
+    <article class="card">
+      <h3>Weather App</h3>
+      <p>Simple Python app that fetches current weather by city using a public API.</p>
+      <a class="btn" href="https://github.com/karoo2245/weather-app" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
 
-      <article class="card">
-        <h3>Mini Blog (Flask)</h3>
-        <p>CRUD posts, SQLite, login. Deployed to Render.</p>
-        <a class="btn" href="#" target="_blank" rel="noopener">GitHub →</a>
-      </article>
-    </section>
+    <article class="card">
+      <h3>Mini Blog (Flask)</h3>
+      <p>CRUD posts, SQLite, login. Deployed to Render.</p>
+      <a class="btn" href="https://github.com/karoo2245/flask-blog" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+  </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Philosophy student aiming at AI Ethics &amp; cybersecurity. Building projects end-to-end with AI assistance.</p>
-    </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>Philosophy student aiming at AI Ethics &amp; Cybersecurity. Building projects end-to-end with AI assistance.</p>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="links">
-        <a href="https://github.com/TwójNick" target="_blank" rel="noopener">GitHub</a>
-        <span>·</span>
-        <a href="mailto:twojmail@example.com">Email</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/in/TwójNick" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="links">
+      <a href="https://github.com/karoo2245/" target="_blank" rel="noopener">GitHub</a>
+      <span>·</span>
+      <a href="mailto:karolina@example.com">Email</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/karolinabacmaga" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </section>
+</main>
 
-  <footer class="site-footer">
-    <small>© 2025 Karolina Baćmaga</small>
-  </footer>
+<footer class="site-footer">
+  <small>© 2025 Karolina Baćmaga</small>
+</footer>
 </body>
 </html>
