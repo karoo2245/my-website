@@ -1,0 +1,129 @@
+/* Base */
+* { box-sizing: border-box; }
+:root {
+  --bg: #f7f7f9;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #6b7280;
+  --border: #e6e8ec;
+  --accent: #2f6feb; /* link/button color */
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* Layout */
+.site-header {
+  text-align: center;
+  padding: 56px 16px 32px;
+}
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+}
+.tagline { margin: 0 0 16px; color: var(--muted); }
+
+.nav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+.nav a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+
+section { margin: 32px 0; }
+h2 { margin: 0 0 16px; font-size: 22px; }
+h3 { margin: 0 0 8px; font-size: 18px; }
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+.card p { margin: 0 0 12px; color: var(--text); }
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover { filter: brightness(0.95); }
+
+/* Dark mode toggle layout */
+.topbar {
+  position: relative;
+  display: flex;
+  justify-content: center;   /* imię/nazwisko na środku */
+  align-items: center;
+}
+.topbar .btn.small {
+  position: absolute;
+  right: 0;                  /* guzik do prawej */
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+/* Links row in Contact */
+.links {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.links a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.links a:hover { text-decoration: underline; }
+.links span { color: var(--muted); }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 32px 0 48px;
+}
+
+/* Dark mode */
+body.dark {
+  --bg: #0f1115;
+  --card: #171a21;
+  --text: #e6e8ee;
+  --muted: #a3a9b6;
+  --border: #262b36;
+  --accent: #6aa5ff;
+}
+body.dark .site-header {
+  background: linear-gradient(180deg, #0f1320 0%, #0f1115 100%);
+}
+
+/* Small screens */
+@media (max-width: 580px) {
+  .site-header { padding: 40px 12px 24px; }
+  .container { padding: 0 12px 48px; }
+}
